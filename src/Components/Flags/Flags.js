@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Flag from '../Flag/Flag';
+import './Flags.css';
 
 const Flags = () => {
     const [flags, setFlags] = useState([]);
@@ -11,13 +12,15 @@ const Flags = () => {
     }, [])
     
     return (
-        <div>
+        <div className='container'>
             <h1>All Countires Flags!!!</h1>
             <hr />
             <h4>Total Country: {flags.length}</h4>
-            {
-                flags.map(flag => <Flag flag={flag}></Flag>)
-            }
+            <div className='flags-container'>
+                {
+                    flags.map(flag => <Flag flag={flag}></Flag>)
+                }
+            </div>
         </div>
     );
 };

@@ -1,0 +1,11 @@
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.flags-container {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 12px;
+}

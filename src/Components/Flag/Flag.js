@@ -1,4 +1,5 @@
 import React from 'react';
+import './Flag.css';
 
 const Flag = (props) => {
     const {flags} = props.flag;

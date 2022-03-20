@@ -2,11 +2,13 @@ import React from 'react';
 import './Flag.css';
 
 const Flag = (props) => {
-    const {flags} = props.flag;
+    const {flags, name} = props.flag;
     return (
-        <div>
+        <div className='flag'>
             <img src={flags.png} alt="" />
+            <div className='flag-detail'>{name.common}</div>
         </div>
+        
     );
 };
 

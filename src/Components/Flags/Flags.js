@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Flag from '../Flag/Flag';
 
 const Flags = () => {
     const [flags, setFlags] = useState([]);
@@ -14,6 +15,9 @@ const Flags = () => {
             <h1>All Countires Flags!!!</h1>
             <hr />
             <h4>Total Country: {flags.length}</h4>
+            {
+                flags.map(flag => <Flag flag={flag}></Flag>)
+            }
         </div>
     );
 };
